@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Ping_Now</string>
     <string name="ping_now">Ping Now</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="chats_fragment">Chats Fragment</string>
+    <string name="status_fragment">Status Fragment</string>
+    <string name="calls_fragment">Calls Fragment</string>
+    <string name="sign_in">Sign In</string>
+    <string name="your_phone_number_here">Your phone number here...</string>
+    <string name="sign_in_via_phone_number">Sign In Via Phone Number</string>
+    <string name="otp_will_be_sent_to_your_phone_number_for_verification">OTP will be sent to your phone number for verification...</string>
+    <string name="signin_img">Signin Image</string>
 </resources>

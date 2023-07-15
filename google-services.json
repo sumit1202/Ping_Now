@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "687073340087",
+    "project_id": "ping-now-80ea8",
+    "storage_bucket": "ping-now-80ea8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687073340087:android:6097ee3f4aa019af5a3b32",
+        "android_client_info": {
+          "package_name": "com.example.ping_now"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687073340087-dlmvtjvgr9vp0jq5pkdisop0rmj1mpdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-e1N9WyA40elM1zbG5jY5iWNX3stRCck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687073340087-dlmvtjvgr9vp0jq5pkdisop0rmj1mpdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
