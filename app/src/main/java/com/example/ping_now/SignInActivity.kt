@@ -28,10 +28,10 @@ class SignInActivity : AppCompatActivity() {
         //else for user NOT signed in
         binding.signInBtnId.setOnClickListener {
             if(binding.enterPhoneEdtTxtId.text!!.isEmpty()){
-                Toast.makeText(this,"Please enter your phone number",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Please enter your phone number...",Toast.LENGTH_LONG).show()
             }else{
                 var intent = Intent(this, OTPActivity::class.java)
-                intent.putExtra("number", binding.enterPhoneEdtTxtId.text!!)
+                intent.putExtra("phone_number", binding.enterPhoneEdtTxtId.text!!.toString())
                 startActivity(intent)
             }
         }

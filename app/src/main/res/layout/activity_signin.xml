@@ -32,6 +32,7 @@
         android:layout_marginTop="1dp"
         android:text="@string/otp_will_be_sent_to_your_phone_number_for_verification"
         android:textStyle="italic"
+        android:layout_marginBottom="20dp"
         android:textSize="12sp"/>
 
     <androidx.cardview.widget.CardView
@@ -39,7 +40,7 @@
         android:layout_height="wrap_content"
         app:cardMaxElevation="5dp"
         app:cardUseCompatPadding="true"
-        android:backgroundTint="#EDE7F6"
+        android:backgroundTint="#F5F1FB"
         app:cardCornerRadius="8dp">
 
         <LinearLayout
