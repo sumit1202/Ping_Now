@@ -29,7 +29,10 @@ class SignInActivity : AppCompatActivity() {
         binding.signInBtnId.setOnClickListener {
             if(binding.enterPhoneEdtTxtId.text!!.isEmpty()){
                 Toast.makeText(this,"Please enter your phone number...",Toast.LENGTH_LONG).show()
-            }else{
+            }else if(binding.enterPhoneEdtTxtId.text!!.toString().length != 10){
+                Toast.makeText(this,"Please enter your valid 10 digit phone number",Toast.LENGTH_LONG).show()
+            }
+            else{
                 var intent = Intent(this, OTPActivity::class.java)
                 intent.putExtra("phone_number", binding.enterPhoneEdtTxtId.text!!.toString())
                 startActivity(intent)

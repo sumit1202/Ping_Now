@@ -31,26 +31,30 @@ class OTPActivity : AppCompatActivity() {
         //creating alert dialog
         val builder = AlertDialog.Builder(this)
             .setCancelable(false)
-            .setTitle("Loading...")
-            .setMessage("Please wait")
+            .setTitle("OTP verification")
+            .setMessage("Hang on...")
 
         dialog = builder.create()
         dialog.show()
 
         val phoneNumber = "+91"+intent.getStringExtra("phone_number")
 
+        Log.d("Phone1202", ""+phoneNumber)
+
         val options = PhoneAuthOptions.newBuilder(auth)
             .setPhoneNumber(phoneNumber)
-            .setActivity(this)
+            .setActivity(this@OTPActivity)
             .setTimeout(60L,TimeUnit.SECONDS)
             .setCallbacks(object: OnVerificationStateChangedCallbacks(){
                 override fun onVerificationCompleted(p0: PhoneAuthCredential) {
+                    Log.d("1onVerificationCompleted1202", "verification completed...")
                 }
 
                 override fun onVerificationFailed(p0: FirebaseException) {
                     Log.d("1202:" , p0.toString())
                     dialog.dismiss()
-                    Toast.makeText(this@OTPActivity, "Please try again...${p0}", Toast.LENGTH_LONG).show()
+                    Log.d("1onVerificationFailed1202", "verification completed...")
+                    Toast.makeText(this@OTPActivity, "Verification failed, please try again...", Toast.LENGTH_LONG).show()
                 }
 
                 override fun onCodeSent(p0: String, p1: PhoneAuthProvider.ForceResendingToken) {
@@ -60,11 +64,13 @@ class OTPActivity : AppCompatActivity() {
                 }
             }).build()
 
+
+
         PhoneAuthProvider.verifyPhoneNumber(options)
 
         binding.verifyBtnId.setOnClickListener {
             if(binding.enterOtpEdtTxtId.text!!.isEmpty()){
-                Toast.makeText(this, "Please enter your OTP...", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@OTPActivity, "Please enter your OTP...", Toast.LENGTH_LONG).show()
             }else{
                 dialog.show()
                 val credential = PhoneAuthProvider.getCredential(verificationId, binding.enterOtpEdtTxtId.text!!.toString())
@@ -73,11 +79,18 @@ class OTPActivity : AppCompatActivity() {
                     .addOnCompleteListener {
                         if(it.isSuccessful){
                             dialog.dismiss()
-                            startActivity(Intent(this,ProfileActivity::class.java))
+                            Log.d("2isSuccessful1202", "Successful...")
+                            Log.d("1202 verification OTP from firebase auth: ", verificationId)
+
+                            Toast.makeText(this@OTPActivity, "Great, you're in...", Toast.LENGTH_LONG).show()
+                            startActivity(Intent(this@OTPActivity,ProfileActivity::class.java))
                             finish()
                         }else{
+                            Log.d("2isNotSuccessful1202", "Not Successful...")
                             dialog.dismiss()
-                            Toast.makeText(this, "${it.exception}", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@OTPActivity, "Great, you're in...${it.exception}", Toast.LENGTH_LONG).show()
+
+
                         }
                     }
 

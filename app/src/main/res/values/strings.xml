@@ -6,13 +6,21 @@
     <string name="status_fragment">Status Fragment</string>
     <string name="calls_fragment">Calls Fragment</string>
     <string name="sign_in">Sign In</string>
-    <string name="your_phone_number_here">Your phone number here...</string>
-    <string name="sign_in_via_phone_number">Sign In Via Phone Number</string>
-    <string name="otp_will_be_sent_to_your_phone_number_for_verification">OTP will be sent to your phone number for verification...</string>
+    <string name="your_phone_number_here">Your phone number here…</string>
+    <string name="sign_in_via_phone_number">Sign In</string>
+    <string name="otp_will_be_sent_to_your_phone_number_for_verification">OTP will be sent to your phone number for verification</string>
     <string name="signin_img">Signin Image</string>
-    <string name="your_otp_here">Your OTP here...</string>
+    <string name="your_otp_here">Your OTP here…</string>
     <string name="verify">Verify</string>
-    <string name="verify_otp_to_complete_sign_in_process">Verify OTP to complete sign in process</string>
-    <string name="verify_your_otp">Verify Your OTP</string>
+    <string name="verify_otp_to_complete_sign_in_process">Verify OTP to authenticate yourself</string>
+    <string name="verify_your_otp">OTP Verification</string>
     <string name="otp_verify">OTP verify</string>
+    <string name="setup">Setup</string>
+    <string name="your_short_status_here">Your short status here…</string>
+    <string name="your_name_here">Your name here…</string>
+    <string name="set_up_your_profile_to_complete_sign_in_process">Enter details to complete setup of your profile</string>
+    <string name="setup_your_profile">Profile Setup</string>
+    <string name="edit_your_profile_picture">Edit your profile picture</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="ping_now_status">Ping Now :)</string>
 </resources>

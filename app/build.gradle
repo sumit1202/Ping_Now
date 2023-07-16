@@ -50,10 +50,11 @@ dependencies {
     // https://firebase.google.com/docs/android/setup#available-libraries
     implementation 'com.google.firebase:firebase-auth-ktx' //firebase-auth
     implementation 'com.google.firebase:firebase-storage-ktx' // firebase-storage
+    implementation 'com.google.firebase:firebase-database-ktx' // firebase-database
     implementation 'com.github.bumptech.glide:glide:4.15.1' // glide
-    implementation 'de.hdodenhof:circleimageview:3.1.0' // circle image view
+    //implementation 'de.hdodenhof:circleimageview:3.1.0' // circle image view
 
-    implementation 'com.google.android.play:integrity:1.1.0'
+    implementation 'com.google.android.play:integrity:1.1.0' //play:integrity
 
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'

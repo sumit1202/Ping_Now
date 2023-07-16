@@ -8,7 +8,7 @@
     android:padding="20dp"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".SignInActivity">
+    tools:context=".OTPActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         app:cardMaxElevation="5dp"
         app:cardUseCompatPadding="true"
-        android:backgroundTint="#F5F1FB"
+        android:backgroundTint="#F8F4FF"
         app:cardCornerRadius="8dp">
 
         <LinearLayout
