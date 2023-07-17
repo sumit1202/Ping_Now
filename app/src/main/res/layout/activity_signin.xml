@@ -38,7 +38,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardMaxElevation="5dp"
+        app:cardElevation="5dp"
         app:cardUseCompatPadding="true"
         android:backgroundTint="#F8F4FF"
         app:cardCornerRadius="8dp">

@@ -44,8 +44,8 @@ class ProfileActivity : AppCompatActivity() {
         binding.setupBtnId.setOnClickListener {
             if (binding.enterNameEdtTxtId.text.isEmpty()) {
                 Toast.makeText(this, "Please enter your name", Toast.LENGTH_LONG).show()
-            } else if (selectedProfilePic == null) {
-                Toast.makeText(this, "Please set your profile picture", Toast.LENGTH_LONG).show()
+            //} else if (selectedProfilePic == null) {
+                //Toast.makeText(this, "Please set your profile picture", Toast.LENGTH_LONG).show()
             } else {
                 storeDataOnStorage()
             }
