@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/received_msg_item_lay" />
+        tools:listitem="@layout/sent_msg_item_lay" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
