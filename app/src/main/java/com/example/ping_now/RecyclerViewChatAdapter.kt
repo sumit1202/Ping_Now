@@ -34,6 +34,8 @@ class RecyclerViewChatAdapter(var context: Context, var list: ArrayList<UserMode
         holder.itemView.setOnClickListener {
             val intent = Intent( context, ChatActivity::class.java)
             intent.putExtra("uid", user.uid)
+            //////
+            intent.putExtra("receiverName", user.name)
             context.startActivity(intent)
 
         }

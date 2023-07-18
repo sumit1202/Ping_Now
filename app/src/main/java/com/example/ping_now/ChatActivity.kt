@@ -22,6 +22,7 @@ class ChatActivity : AppCompatActivity() {
     private lateinit var receiverRoomUid: String
 
     private lateinit var list: ArrayList<MessageModel>
+    private lateinit var list1: ArrayList<UserModel>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +35,7 @@ class ChatActivity : AppCompatActivity() {
         receiverRoomUid = receiverUid + senderUid
 
         list = ArrayList()
+        list1 = ArrayList()
 
         realtimeDatabase = FirebaseDatabase.getInstance()
 
@@ -72,6 +74,8 @@ class ChatActivity : AppCompatActivity() {
                             RecyclerViewMessageAdapter(this@ChatActivity, list)
 
                     }
+                    val receiverName = intent.getStringExtra("receiverName")
+                    binding.msgBoxId.hint = "Ping " + receiverName + " .....✍( ▀̿ ̿ ‿ ▀̿ ̿  )"
                 }
 
                 override fun onCancelled(error: DatabaseError) {
@@ -79,5 +83,6 @@ class ChatActivity : AppCompatActivity() {
                 }
 
             })
+
     }
 }

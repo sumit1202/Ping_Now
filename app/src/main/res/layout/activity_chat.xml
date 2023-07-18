@@ -14,13 +14,12 @@
         android:id="@+id/chat_recycler_view_msg_list_id"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:padding="5dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/sent_msg_item_lay" />
+        tools:listitem="@layout/received_msg_item_lay" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"

@@ -23,5 +23,5 @@
     <string name="edit_your_profile_picture">Edit your profile picture</string>
     <string name="profile_picture">Profile Picture</string>
     <string name="ping_now_status">Ping Now :)</string>
-    <string name="type_your_message_here">Type your message here…</string>
+    <string name="type_your_message_here">Ping …</string>
 </resources>
